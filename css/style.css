@@ -1,1 +1,26 @@
-body {}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Roboto-Regular"),
+    url("roboto.woff") format("woff");
+}
+
+html,
+body {
+	background-color: white;
+	font-size: 46px;
+	font-family:  "Roboto", sans-serif;
+	
+}
+
+
+.logo {
+	position: absolute;
+	top: 10px;
+	left: 140px;
+	
+	margin: 0;
+}
+
