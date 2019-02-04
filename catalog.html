@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  
+
 </head>
 
 <body>
@@ -22,14 +22,15 @@
       </ul>
 
       <a class="basket" href="#">Корзина</a>
-    
+
     </nav>
   </header>
+  
   <main class="container">
-    
+
     <h1 class="page-title">Магазин готовых шаблонов</h1>
 
-   
+
 
     <p class="#">Сортировать:</p>
 
@@ -43,27 +44,27 @@
       <h2 class="visually-hidden">Фильтр товара</h2>
       <p>Стоимость</p>
 
-      <form class="filter" method="get"
-      action="https://echo.htmlacademy.ru">
-        <fieldset>
-            <fieldset>
-                <legend>Сетка:</legend>
-                <ul>
-                  <li>
-                    <input type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
-                    <label for="filter-adaptive">Адаптация</label>
-                  </li>
-                  <li>
-                    <input type="radio" name="product-group" value="fixed" id="filter-fixed">
-                    <label for="filter-fixed">Фиксированная</label>
-                  </li>
-                  <li>
-                    <input type="radio" name="product-group" value="rubber" id="filter-rubber">
-                    <label for="filter-rubber">Резиновая</label>
-                  </li>
-                </ul>
-              </fieldset>
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="product-group" value="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="product-group" value="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
           <legend>Особенности:</legend>
           <ul>
             <li>
@@ -88,23 +89,26 @@
             </li>
           </ul>
         </fieldset>
-  
-        
-        <button type="submit">Показать</button>
+        <button type="button">Показать</button>
+
+
+
       </form>
-      
+
     </section>
 
     <section class="catalog">
-        <h2 class="visually-hidden">Товары</h2>
+      <h2 class="visually-hidden">Товары</h2>
 
       <ul class="catalog-list">
 
         <li>
-          
-            <img src="img/img-sedona.png" height="576"  width="360" alt="Sedona">
-          
-          <a href="#"><h3>Sedona</h3></a>
+
+          <img src="img/img-sedona.png" height="576" width="360" alt="Sedona">
+
+          <a href="#">
+            <h3>Sedona</h3>
+          </a>
           <p class="">Информационный сайт для туристов</p>
           <p class="catalog-item-price">
             <a class="button" href="#">9 900 Руб.</a>
@@ -112,70 +116,80 @@
         </li>
 
         <li>
-             
-              <img src="img/img-pink.png" height="576"  width="360" alt="Pink App">
-           
-            <a href="#"><h3>Pink App</h3></a>
-            <p class="">Продуктовый лендинг приложения для iOS и Android</p>
-            <p class="catalog-item-price">
-              <a class="button" href="#">9 900 Руб.</a>
-            </p>
-          </li>
 
-          <li>
-              
-                <img src="img/img-barbershop.png" height="576"  width="360" alt="Barbershop">
-              
-              <a href="#"><h3>Barbershop</h3></a>
-              <p class="">Сайт салона красоты.Для мужчин, да.</p>
-              <p class="catalog-item-price">
-                <a class="button" href="#">9 900 Руб.</a>
-              </p>
-            </li>
+          <img src="img/img-pink.png" height="576" width="360" alt="Pink App">
 
-            <li>
-                
-                  <img src="img/img-mishka.png" height="576"  width="360" alt="MISHKA">
-                
-                <a href="#"><h3>MISHKA</h3></a>
-                <p class="">Интернет-магазин вязаных игрушек</p>
-                <p class="catalog-item-price">
-                  <a class="button" href="#">9 900 Руб.</a>
-                </p>
-              </li>
+          <a href="#">
+            <h3>Pink App</h3>
+          </a>
+          <p class="">Продуктовый лендинг приложения для iOS и Android</p>
+          <p class="catalog-item-price">
+            <a class="button" href="#">9 900 Руб.</a>
+          </p>
+        </li>
 
-              <li>
-                  
-                    <img src="img/img-aplus.png" height="576"  width="360" alt="A Plus">
-                 
-                  <a href="#"><h3>A Plus</h3></a>
-                  <p class="">Лендинг курсов повышения квалификации</p>
-                  <p class="catalog-item-price">
-                    <a class="button" href="#">9 900 Руб.</a>
-                  </p>
-                </li>
+        <li>
 
-                <li>
-                    
-                      <img src="img/img-kvast.png" height="576"  width="360" alt="КВАСТ">
-                    
-                    <a href="#"><h3>КВАСТ</h3></a>
-                    <p class="">Промо-сайт производителя крафтового кваса</p>
-                    <p class="catalog-item-price">
-                      <a class="button" href="#">9 900 Руб.</a>
-                    </p>
-                  </li>
+          <img src="img/img-barbershop.png" height="576" width="360" alt="Barbershop">
+
+          <a href="#">
+            <h3>Barbershop</h3>
+          </a>
+          <p class="">Сайт салона красоты.Для мужчин, да.</p>
+          <p class="catalog-item-price">
+            <a class="button" href="#">9 900 Руб.</a>
+          </p>
+        </li>
+
+        <li>
+
+          <img src="img/img-mishka.png" height="576" width="360" alt="MISHKA">
+
+          <a href="#">
+            <h3>MISHKA</h3>
+          </a>
+          <p class="">Интернет-магазин вязаных игрушек</p>
+          <p class="catalog-item-price">
+            <a class="button" href="#">9 900 Руб.</a>
+          </p>
+        </li>
+
+        <li>
+
+          <img src="img/img-aplus.png" height="576" width="360" alt="A Plus">
+
+          <a href="#">
+            <h3>A Plus</h3>
+          </a>
+          <p class="">Лендинг курсов повышения квалификации</p>
+          <p class="catalog-item-price">
+            <a class="button" href="#">9 900 Руб.</a>
+          </p>
+        </li>
+
+        <li>
+
+          <img src="img/img-kvast.png" height="576" width="360" alt="КВАСТ">
+
+          <a href="#">
+            <h3>КВАСТ</h3>
+          </a>
+          <p class="">Промо-сайт производителя крафтового кваса</p>
+          <p class="catalog-item-price">
+            <a class="button" href="#">9 900 Руб.</a>
+          </p>
+        </li>
 
       </ul>
 
       <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
+        <li class="pagination-item pagination-item-current"><a>1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
         <li><a href="#">следующая</a></li>
       </ul>
 
-      
+
 
     </section>
 
@@ -183,44 +197,44 @@
   <footer class="main-footer">
     <h3>NЁRDS DESIGN STUDIO</h3>
     <p class="footer-contacts">
-        191186, Санкт-Петербург, <br>
-        ул. Б. Конюшенная, д. 19/8 <br>
-        
-        тел. +7 (812) 275-75-75
+      191186, Санкт-Петербург, <br>
+      ул. Б. Конюшенная, д. 19/8 <br>
+
+      тел. +7 (812) 275-75-75
     </p>
-    <button type="button">Напишите нам</button>
+    <a class="">Напишите нам</a>
 
     <div class="#">
-        <ul class="#">
+      <ul class="#">
         <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
-          </ul>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+      </ul>
 
       <p>Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
 
   </footer>
-  
-    <section class="modal modal-form">
+
+  <section class="modal modal-form">
     <h2>Напишите нам</h2>
 
-    <form class="modal" method="get" action="https://echo.htmlacademy.ru">
+    <form class="modal" method="post" action="https://echo.htmlacademy.ru">
       <label for="your-name">Ваше имя:</label>
-      <input type="text" id="your-name" name="your-name" value="Имя Фамилия">
+      <input type="text" id="your-name" name="your-name" placeholder="Имя Фамилия">
 
       <label for="your-e-mail">Ваш e-mail:</label>
-      <input type="text" id="your-e-mail" name="your-e-mail" value="Ваш e-mail:">
+      <input type="text" id="your-e-mail" name="your-e-mail" placeholder="Ваш e-mail:">
 
       <label for="your-text">Текст письма:</label>
-      <input type="text" id="your-text" name="your-text" value="В свободной форме">
+      <input type="text" id="your-text" name="your-text" placeholder="В свободной форме">
 
       <button type="submit">Отправить</button>
     </form>
 
   </section>
-  
+
 </body>
 
 </html>
