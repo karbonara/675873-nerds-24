@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -22,9 +22,9 @@
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
-      
-        <a class="basket" href="#">Корзина</a>
-      
+
+      <a class="button button-basket" href="#">Корзина</a>
+
 
     </nav>
 
@@ -33,19 +33,19 @@
   <main class="container">
     <h1 class="visually-hidden">Нердс</h1>
 
-    <section class="slider-1">
-      <ul class="#">
+    <section class="slider-navigation">
+      <ul class="slider-main">
         <li class="#">
-          <img src="img/slide1.png" width="698" height="413" alt="Slider-1">
+          <img src="img/slide1.png" width="698" height="413" alt="Slider">
           <h3>Долго, дорого,
             скрупулезно.</h3>
           <p>Математически выверенный дизайн
             для вашего сайта или мобильного приложения.</p>
         </li>
       </ul>
-      <a class="button" href="#">Узнать больше</a>
+      <a class="button button-red" href="#">Узнать больше</a>
 
-      <ul class="slider-2">
+      <ul class="slider-main">
         <li class="#">
           <img src="img/slide2.png" width="698" height="413" alt="Slider-2">
           <h3>Любим математику
@@ -54,9 +54,9 @@
             для расчета идеальных пропорций.</p>
         </li>
       </ul>
-      <a class="button" href="#">Узнать больше</a>
+      <a class="button button-red" href="#">Узнать больше</a>
 
-      <ul class="slider-3">
+      <ul class="slider-main">
         <li class="#">
           <img src="img/slide3.png" width="698" height="413" alt="Slider-3">
           <h3>Только ночь,
@@ -65,10 +65,7 @@
             Ближе к полуночи работа только начинается.</p>
         </li>
       </ul>
-      <a class="button" href="#">Узнать больше</a>
-
-
-
+      <a class="button button button-red" href="#">Узнать больше</a>
     </section>
 
 
@@ -88,7 +85,7 @@
 
           <p>Мир никогда не будет прежним
             после того как увидит ваш сайт!</p>
-          <a class="button" href="#">ЗАКАЗАТЬ</a>
+          <a class="button button-red" href="#">Заказать</a>
         </li>
 
         <li class="catalog-item">
@@ -98,7 +95,7 @@
 
           <p>Покорите топ-10 приложений в
             AppStore и Google Play</p>
-          <a class="button" href="#">ЗАКАЗАТЬ</a>
+          <a class="button button-green" href="#">Заказать</a>
         </li>
 
         <li class="catalog-item">
@@ -108,7 +105,7 @@
 
           <p>Вы даже не подозреваете,
             насколько вы изумительны!</p>
-          <a class="button" href="#">ЗАКАЗАТЬ</a>
+          <a class="button button-yellow" href="#">Заказать</a>
         </li>
 
 
@@ -117,12 +114,12 @@
 
     </section>
 
-    <section class="#">
+    <section class="studio">
       <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
         превыше креатива. Работаем не покладая рук, как роботы.</p>
 
-      <ul class="#">
+      <ul class="studio-order">
         <li>Выполняем заказы на разработку:</li>
         <li>Веб-сайтов любой сложности</li>
         <li>Мобильных приложений для iOS и Android</li>
@@ -130,28 +127,28 @@
       </ul>
     </section>
 
-    <section class="#">
+    <section class="studio-accuracy">
 
       <h3>с 2004 года Любим точность во всем:</h3>
       <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип Nerds">
 
-      <table class="#">
+      <table class="studio-percent">
         <tr>
-          <th>Уровень самоотдачи</th>
-          <th>Соблюдение сроков</th>
-          <th>Минимальная предоплата</th>
+          <th>146<sup>%</sup></th>
+          <th>100<sup>%</sup></th>
+          <th>55<sup>%</sup></th>
         </tr>
         <tr>
-          <td>146%</td>
-          <td>100%</td>
-          <td>50%</td>
+          <td>Уровень самоотдачи</td>
+          <td>Соблюдение сроков</td>
+          <td>Минимальная предоплата</td>
         </tr>
       </table>
 
     </section>
 
-    <section class="#">
-      <h3 class="#">Каталог</h3>
+    <section class="brand">
+      <h3>Бренды</h3>
       <ul>
         <li><a href="#"><img src="img/logo-1.png" width="199" height="68" alt="Html Academy"></a></li>
         <li><a href="#"><img src="img/logo-2.png" width="209" height="87" alt="Barbershop"></a></li>
@@ -172,23 +169,23 @@
 
       тел. +7 (812) 275-75-75
     </p>
-    <a class="button">Напишите нам</a>
+    <a class="button button-red">Напишите нам</a>
 
-    <div class="#">
-      <ul class="#">
+    <div class="social">
+      <ul class="social-networks">
         <li><a class="social-button button-vk" href="#">Вконтакте</a></li>
         <li><a class="social-button button-fb" href="#">Фейсбук</a></li>
         <li><a class="social-button button-inst" href="#">Инстаграм</a></li>
       </ul>
 
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <p class="social-sentence">Давайте дружить, это выгодно!</p>
+      <p class="social-sale">Скидка 10% для друзей из социальных сетей.</p>
     </div>
 
   </footer>
 
   <section class="modal modal-form">
-    <h2>Напишите нам</h2>
+    <h2 class="visually-hidden">Напишите нам</h2>
 
     <form class="modal" method="post" action="https://echo.htmlacademy.ru">
       <label for="your-name">Ваше имя:</label>
@@ -200,7 +197,7 @@
       <label for="your-text">Текст письма:</label>
       <input type="text" id="your-text" name="your-text" placeholder="В свободной форме">
 
-      <button type="submit">Отправить</button>
+      <button type="submit" class="button button-red">Отправить</button>
     </form>
 
   </section>
