@@ -3,15 +3,15 @@ body {
   margin: 0;
 
 
-  font-family: "Roboto", sans-serif;
-  background-color: white;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #ffffff;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  text-transform: uppercase;
 
-  background-color: white;
-  background-position: center;
+
+  background-color: #ffffff;
+
 }
 
 a {
@@ -19,7 +19,7 @@ a {
 }
 
 .main-menu {
-  font-size: 16;
+  font-size: 16px;
   line-height: 30px;
   color: #000000;
 
@@ -31,47 +31,15 @@ a {
   list-style: none;
 }
 
-.navigation-menu a,
-.button {
+.navigation-menu a {
   color: #000000;
 }
 
 
 
-
-
-/*
-.navigation-menu  {
-  display: flex;
-  align-items: center;
-  padding-left: 500px;
-  
-  
-}
-
-.navigation-menu li {
-  margin-right: 47px;
-  
-}
-
-.button-basket  {
-  width: 100px;
-  height: 38px;
-  border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 1206px;
-  }
-*/
-
-
-
 .navigation-menu a:hover,
-.navigation-menu a:focus,
-.button:hover,
-.button:focus {
-  background-color: #fb565a;
+.navigation-menu a:focus {
+  color: #fb565a;
 }
 
 
@@ -94,9 +62,18 @@ a {
   background-color: #e74246;
 }
 
+.basket {
+  color: #000000;
+}
+
+.basket:hover,
+.basket:focus {
+  color: #fb565a;
+}
+
 .button-red {
   background-color: #fb565a;
-  color: white;
+  color: #ffffff;
 
 }
 
@@ -107,7 +84,7 @@ a {
 
 .button-green {
   background-color: #00ca74;
-  color: white;
+  color: #ffffff;
 }
 
 .button-yellow:hover,
@@ -117,7 +94,7 @@ a {
 
 .button-yellow {
   background-color: #efc84a;
-  color: white;
+  color: #ffffff;
 }
 
 .button {
@@ -228,7 +205,7 @@ a {
   list-style: none;
 }
 
-.breadcrumbs a{
+.breadcrumbs a {
   color: #b2b2b2;
 }
 
@@ -239,7 +216,7 @@ a {
 
 .filters fieldset {
   border: none;
-  color: 
+
 }
 
 .filters ul {
@@ -255,7 +232,7 @@ a {
 
 .filters-input:disabled + label {
   color: #bec1c2;
-  
+
   opacity: 0.5;
 }
 
@@ -266,7 +243,7 @@ a {
 .catalog-item h3 {
   font-size: 18px;
   line-height: 30px;
-  color: black;
+  color: #000000;
 }
 
 .catalog-item p {
@@ -288,4 +265,16 @@ a {
 .pagination-list a:hover,
 .pagination-list a:focus {
   background-color: #dfdfdf;
+}
+
+.pagination-item-current a {
+  background-color: #ffffff;
+}
+
+.footer-info {
+  background-color: #ffffff;
+}
+
+.modal {
+  display: none;
 }
