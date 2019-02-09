@@ -1,7 +1,7 @@
 html,
 body {
   margin: 0;
-
+  
 
   font-family: "Roboto", Arial, sans-serif;
   background-color: #ffffff;
@@ -18,12 +18,44 @@ a {
   text-decoration: none;
 }
 
+.main-header {
+  margin-bottom: 18px;
+}
+
 .main-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   font-size: 16px;
   line-height: 30px;
   color: #000000;
 
   background-color: #eeeeee;
+}
+
+
+.main-menu-wrapper {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.main-header-logo {
+  
+  width: 160px;
+  height: 65px;
+}
+
+.navigation-menu {
+  width: 660px;
+  margin: 0;
+  padding: 0;
+}
+
+.basket {
+  width: 180px;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-menu,
@@ -102,11 +134,12 @@ a {
   line-height: 18px;
 }
 
-. .catalog-list {
+.catalog-list {
   list-style: none;
 }
 
 .catalog-item {
+  width: 300px;
   text-align: center;
   text-decoration: none;
   list-style: none;
@@ -155,6 +188,8 @@ a {
   font-size: 16px;
   line-height: 18px;
 }
+
+
 
 
 
@@ -237,6 +272,10 @@ a {
 }
 
 .catalog-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
