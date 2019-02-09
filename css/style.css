@@ -46,6 +46,17 @@ a {
   height: 65px;
 }
 
+.main-menu-container {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-menu-wrapper .main-menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .navigation-menu {
   width: 660px;
   margin: 0;
