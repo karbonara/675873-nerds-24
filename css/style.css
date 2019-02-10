@@ -1,7 +1,7 @@
 html,
 body {
   margin: 0;
-  
+
 
   font-family: "Roboto", Arial, sans-serif;
   background-color: #ffffff;
@@ -18,55 +18,72 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 .main-header {
-  margin-bottom: 18px;
+  width: 1160px;
+  margin-top: 50px;
+  background-color: #eeeeee;
 }
 
 .main-menu {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  
+
   font-size: 16px;
   line-height: 30px;
   color: #000000;
 
-  background-color: #eeeeee;
+  
 }
 
 
-.main-menu-wrapper {
-  width: 100%;
-  margin-bottom: 15px;
-}
+
 
 .main-header-logo {
-  
   width: 160px;
   height: 65px;
+  
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  
 }
 
-.main-menu-container {
-  width: 1180px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
 
-.main-menu-wrapper .main-menu-container {
-  display: flex;
-  justify-content: space-between;
-}
 
 .navigation-menu {
-  width: 660px;
-  margin: 0;
-  padding: 0;
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+  
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
+
 }
 
 .basket {
   width: 180px;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .navigation-menu,
@@ -87,6 +104,15 @@ a {
 
 
 .slider-main {
+  
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  
+  background-color: #eeeeee;
   list-style: none;
 }
 
@@ -157,6 +183,22 @@ a {
 
 }
 
+.catalog-list {
+  
+  
+  display: flex;
+  justify-content: space-around;
+  
+  
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  
+  list-style: none;
+}
+
 .catalog-item b {
   font-size: 24px;
   line-height: 30px;
@@ -165,6 +207,17 @@ a {
 .catalog-item p {
   font-size: 16px;
   line-height: 24px;
+}
+
+.studio {
+  display: block;
+  justify-content: flex-start;
+  
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  
 }
 
 .studio h2 {
@@ -185,9 +238,21 @@ a {
 
 }
 
-.studio-accuracy {
+.studio-items {
+  
+  display: block;
+  justify-content: flex-end;
+  
+  
   font-size: 16px;
   line-height: 24px;
+  
+  
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  
 }
 
 .studio-percent th {
@@ -214,9 +279,22 @@ a {
 }
 
 .social-networks {
+  
+  display: flex;
+  justify-content: flex-start;
+  
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  
   list-style: none;
 }
 
+.social-button {
+  
+  color: #000000;
+}
 
 .social-sentence {
   font-size: 36px;
@@ -227,6 +305,10 @@ a {
   font-size: 16px;
   line-height: 22px;
 }
+
+
+
+
 
 
 .inner-page {
@@ -282,21 +364,29 @@ a {
   opacity: 0.5;
 }
 
-.catalog-list {
+
+
+
+
+.brand-item {
   display: flex;
   justify-content: space-around;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  
+  
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.catalog-item h3 {
+.catalog-items h3 {
+  
   font-size: 18px;
   line-height: 30px;
   color: #000000;
 }
 
-.catalog-item p {
+.catalog-items p {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
