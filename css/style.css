@@ -18,6 +18,8 @@ a {
   text-decoration: none;
 }
 
+
+
 .visually-hidden {
   display: none;
 }
@@ -324,10 +326,11 @@ a {
 
 .social-networks {
   width: 260px;
-  justify-content: space-around;
+  justify-content: space-between;
   display: flex;
   align-items: center;
-  
+  margin: 0;
+  padding-left: 0;
   
   list-style: none;
 }
@@ -355,62 +358,50 @@ a {
   line-height: 22px;
 }
 
-.main-footer {
-  
-  
-}
-
-
-
 
 .inner-page {
   color: #000000;
-
-
-}
-
-.container-title {
   
-  background-color: #eeeeee;
 }
 
 
-.page-title {
-  
-  margin: 0 auto;
+
+.container-inner {
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
   
+}
+
+.title {
+  padding-top: 76px;
+  padding-bottom: 100px;
+}
+
+.page-title {
+  
+  width: 760px;
+  
+  
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   
   
   font-size: 55px;
   line-height: 55px;
 }
 
-.sort {
-  
-  
-  font-size: 18px;
-  line-height: 30px;
+.main-inner {
+  display: flex;
 }
 
 
-.breadcrumbs {
-  font-size: 14px;
-  list-style: none;
-}
-
-.breadcrumbs a {
-  color: #b2b2b2;
-}
-
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
-  color: #666666;
-}
 
 
 .filters {
@@ -425,8 +416,8 @@ a {
 
 .filters fieldset {
   border: none;
-
 }
+
 
 .filters ul {
   list-style: none;
@@ -445,10 +436,37 @@ a {
   opacity: 0.5;
 }
 
-
-.product {
+.sort-main {
+ 
   
+  display: flex;
+  width: 760px;
+}
 
+.sort {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+.breadcrumbs {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  
+  font-size: 14px;
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #b2b2b2;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #666666;
 }
 
 .product-list {
@@ -464,8 +482,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
-  
 }
 
 .catalog-items {
@@ -487,10 +503,10 @@ a {
   color: #666666;
 }
 
-
 .pagination-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  
   margin: auto;
   
   padding-right: 50px;
@@ -515,6 +531,24 @@ a {
 }
 
 .footer-info {
+  background-color: #ffffff;
+}
+
+.footer-info img {
+  width: 1440px;
+  
+  position: relative;
+  margin: 0;
+  padding: 0;
+  
+  
+}
+
+
+
+.contact {
+  width: 320px;
+  
   background-color: #ffffff;
 }
 
