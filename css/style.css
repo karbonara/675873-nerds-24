@@ -24,6 +24,7 @@ a {
   display: none;
 }
 
+
 .main-header {
   
   padding-top: 49px;
@@ -49,15 +50,10 @@ a {
   color: #000000;
 }
 
-
-
-
 .main-header-logo {
   width: 160px;
   height: 65px;
   }
-
-
 
 .navigation-menu {
   width: 800px;
@@ -84,6 +80,7 @@ a {
   
   color: #000000;
 }
+
 
 
 
@@ -364,34 +361,22 @@ a {
   
 }
 
-
-
-.container-inner {
-  width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+.title {
+  background-color: #eeeeee;
   
 }
 
-.title {
-  padding-top: 76px;
-  padding-bottom: 100px;
-}
+
 
 .page-title {
+  display: flex;
+  justify-content: center;
   
-  width: 760px;
   
-  
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 auto;
+  padding-bottom: 180px;
   
   font-size: 55px;
   line-height: 55px;
@@ -399,19 +384,18 @@ a {
 
 .main-inner {
   display: flex;
-}
-
-
-
-
-.filters {
   width: 1160px;
-  margin: 0 auto;
-  
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  
+}
+
+
+.filters {
+  width: 300px;
 }
 
 .filters fieldset {
@@ -437,10 +421,7 @@ a {
 }
 
 .sort-main {
- 
-  
   display: flex;
-  width: 760px;
 }
 
 .sort {
@@ -469,19 +450,19 @@ a {
   color: #666666;
 }
 
+section.product {
+  width: 760px;
+}
+
 .product-list {
   list-style: none;
-  
-  width: 760px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
   
   
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 0;
+  margin: 0;
 }
 
 .catalog-items {
@@ -507,6 +488,7 @@ a {
   display: flex;
   justify-content: space-between;
   
+  
   margin: auto;
   
   padding-right: 50px;
@@ -531,24 +513,34 @@ a {
 }
 
 .footer-info {
-  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  height: 416px;
+  
 }
 
 .footer-info img {
   width: 1440px;
-  
-  position: relative;
-  margin: 0;
-  padding: 0;
-  
+  height: 416px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -720px;
   
 }
 
-
+.contact-wrapper {
+  width: 1160px;
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .contact {
+  position: relative;
   width: 320px;
-  
   background-color: #ffffff;
 }
 
