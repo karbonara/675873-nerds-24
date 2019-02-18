@@ -291,6 +291,7 @@ a {
 
 
 .brand-item {
+  list-style: none;
   
   display: flex;
   width: 1160px;
@@ -366,19 +367,19 @@ a {
   
 }
 
-
-
 .page-title {
-  display: flex;
-  justify-content: center;
-  
-  
   width: 1160px;
   margin: 0 auto;
-  padding: 0 auto;
+  text-align: center;
+  
   padding-bottom: 180px;
   padding-top: 100px;
   
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  margin-left: auto;
+  margin-right: auto;
   
   font-size: 55px;
   line-height: 55px;
@@ -463,7 +464,7 @@ section.product {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 0;
+  padding: 0;
   margin: 0;
 }
 
