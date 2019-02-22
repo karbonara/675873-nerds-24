@@ -76,7 +76,7 @@ input[type="radio"].visually-hidden {
 .navigation-menu {
   width: 800px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   
   margin-left: 20px;
   margin-right: 20px;
@@ -146,14 +146,13 @@ input[type="radio"].visually-hidden {
 
 .slider-main {
   
-  display: flex;
-  justify-content: center;
+ 
   
   width: 1160px;
   margin: 0 auto;
   
   padding: 0;
-  margin: 0;
+  
  
   padding-left: 20px;
   padding-right: 20px;
@@ -167,9 +166,33 @@ input[type="radio"].visually-hidden {
   padding: 78px 0 80px 0;
 }
 
+.slider-items {
+  display: none;
+}
+
+.slider-items:nth-child(2) {
+  display: block;
+}
+
+.slider-controls .active::before {
+  
+}
+
 .slider-items:nth-child(1) {
   
   background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
+}
+
+.slider-items:nth-child(2) {
+  background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
+}
+
+.slider-items:nth-child(3) {
+  background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-position: 93% 18px;
 }
@@ -215,6 +238,11 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
+
+.slider-controls .active::before {
+  
+}
+
 .slider-main h3 {
   max-width: 600px;
   margin: 0;
@@ -241,6 +269,7 @@ input[type="radio"].visually-hidden {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 150px;
 }
 
 .catalog-list {
@@ -261,6 +290,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item {
+  
   width: 300px;
   text-align: center;
   text-decoration: none;
@@ -269,11 +299,14 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item b {
+  
   font-size: 24px;
   line-height: 30px;
 }
 
 .catalog-item p {
+  
+  
   font-size: 16px;
   line-height: 24px;
 }
@@ -359,6 +392,18 @@ input[type="radio"].visually-hidden {
   
 }
 
+.button-slider:hover,
+.button-slider:focus  {
+  background-color: #e74246;
+}
+
+.button-slider:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  
+}
+
 .main-studio {
   display: flex;
   justify-content: space-between;
@@ -368,7 +413,10 @@ input[type="radio"].visually-hidden {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 140px;
 }
+
+
 
 .studio {
   
@@ -422,11 +470,17 @@ input[type="radio"].visually-hidden {
 .studio-percent td {
   font-size: 16px;
   line-height: 18px;
+  
+  padding: 23px;
 }
 
+.studio-percent th {
+  padding: 20px;
+}
 
-
-
+.studio-items h3 {
+  padding-bottom: 45px;
+}
 
 .brand-item {
   list-style: none;
@@ -437,6 +491,7 @@ input[type="radio"].visually-hidden {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 130px;
   align-items: center;
   justify-content: space-between;
   opacity: 0.5;
@@ -620,6 +675,27 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
 }
 
+
+.filter-button {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 16px 88px;
+  
+  font: inherit;
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  
+  background-color: #eeeeee;
+  border: none;
+}
+
+.filter-button:hover,
+.filter-button:focus{
+  background-color: #dfdfdf;
+}
+
 .sort-main {
   display: flex;
 }
@@ -669,6 +745,11 @@ section.product {
   list-style: none;
   width: 360px;
   
+}
+
+.catalog-items a {
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-items h3 {
@@ -731,6 +812,7 @@ section.product {
   position: relative;
   overflow: hidden;
   height: 416px;
+  padding-bottom: 68px;
   
 }
 
@@ -745,6 +827,7 @@ section.product {
 }
 
 .contact-wrapper {
+  
   width: 1160px;
   margin-top: 55px;
   margin-left: auto;
@@ -762,15 +845,29 @@ section.product {
   background-color: #ffffff;
 }
 
+
 .contact h3 {
   font-size: 18px;
   line-height: 30px;
+  
+  padding-top: 54px;
+  margin: 0;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+
+
 
 .footer-contacts  {
   color: #989898;
   font-size: 16px;
   line-height: 18px;
+  
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .modal {
@@ -797,6 +894,11 @@ section.product {
   display: block;
   width: 160px;
   padding: 13px 0;
+  
+  
+  margin: 0;
+  margin-left: 50px;
+  margin-right: 50px;
   
   color: #ffffff;
   text-transform: uppercase;
