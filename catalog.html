@@ -43,8 +43,33 @@
      
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товара</h2>
-        <p class="cost">Стоимость:</p>
+<!--        <p class="cost">Стоимость:</p>-->
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+         
+        <fieldset>
+         <legend class="cost">Стоимость</legend>
+          <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+           <label class="min-price">
+             от<input name="min-price" type="text" value="0">
+           </label>
+           <label class="max-price">
+             до<input name="max-price" type="text" value="1500">
+           </label>
+         </div>
+         
+        </div>
+        </fieldset>
+        
+         
+         
           <fieldset>
             <legend>Сетка:</legend>
             <ul >
@@ -185,13 +210,14 @@
             </p>
             </div>
           </li>
+          
         </ul>
 
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
-          <li><a href="#">следующая</a></li>
+          <li class="next"><a href="#">следующая</a></li>
         </ul>
 
       </section>

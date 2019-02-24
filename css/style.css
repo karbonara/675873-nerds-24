@@ -89,6 +89,8 @@ input[type="radio"].visually-hidden {
   padding: 0 24px;
 }
 
+
+
 .basket {
   width: 180px;
   display: flex;
@@ -166,14 +168,14 @@ input[type="radio"].visually-hidden {
 
 .slider-items {
   
-  padding: 68px 0 100px 0;
+  padding: 65px 0 100px 0;
 }
 
 .slider-items {
   display: none;
 }
 
-.slider-items:nth-child(2) {
+.slider-items:nth-child(3) {
   display: block;
 }
 
@@ -202,8 +204,8 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
   position: absolute;
-  left: 50%;
-  bottom: 104px;
+  left: 655px;
+  bottom: 120px;
   z-index: 100;
   
   width: 160px;
@@ -542,7 +544,7 @@ input[type="radio"].visually-hidden {
   
   align-items: center;
   justify-content: space-between;
-  opacity: 0.5;
+  
   
   margin-top: 45px;
   margin-bottom: 80px;
@@ -550,7 +552,14 @@ input[type="radio"].visually-hidden {
   
   }
 
+.brand-items {
+  opacity:  0.5;
+}
 
+.brand-items:hover,
+.brand-items:focus {
+  opacity: 1;
+}
 
 .brand li {
   text-align: center;
@@ -646,7 +655,59 @@ input[type="radio"].visually-hidden {
 }
 
 .cost {
-  margin-top: 55px;
+  padding-top: 60px;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 50px;
+}
+
+.range-controls {
+  position: relative;
+  
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  
+  border: 8px solid #ffffff;
+  background-color: #adadad;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
 }
 
 .filters {
@@ -666,8 +727,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option {
-  margin-bottom: 23px;
-  padding-left: 16px;
+  margin-bottom: 20px;
+  padding-left: 40px;
   
 }
 
@@ -684,7 +745,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   left: 0px;
-  top: 12px;
+  top: -3px;
   
   width: 25px;
   height: 25px;
@@ -697,7 +758,7 @@ input[type="radio"].visually-hidden {
   
   position: absolute;
   left: 0px;
-  top: 12px;
+  top: -3px;
   
   width: 25px;
   height: 25px;
@@ -761,7 +822,7 @@ input[type="radio"].visually-hidden {
 .filters-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -13px;
+  left: 0px;
   top: 0;
   
   width: 23px;
@@ -775,7 +836,7 @@ input[type="radio"].visually-hidden {
   content: "";
   
   position: absolute;
-  left: -13px;
+  left: 0px;
   top: 0;
   
   width: 23px;
@@ -835,14 +896,20 @@ section.product {
 .catalog-container {
   position: absolute;
   bottom: 0;
-  
+  top: 345px;
   
   text-align: center;
   background-color: #eeeeee;
   width: 360px;
   height: 230px;
-  
+  display: none;
 }
+
+
+.catalog-items:hover .catalog-container {
+  display: block;
+}
+
 
 
 
@@ -876,12 +943,12 @@ section.product {
   position: absolute;
   width: 360px;
   height: 40px;
-  top: -39px;
+  top: -40px;
   
   background-image: url(../img/browser.svg);
   opacity: 0.12;
+  
 }
-
 
 
 
@@ -902,6 +969,13 @@ section.product {
   line-height: 18px;
   color: #666666;
 }
+
+
+.next {
+  width: 260px;
+  text-align: center;
+}
+
 
 .pagination-list {
   display: flex;
@@ -924,6 +998,7 @@ section.product {
 
 .pagination-item:last-child {
   margin-right: 0;
+  
 }
 
 .pagination-list a {
@@ -942,6 +1017,9 @@ section.product {
 
 .pagination-item-current a {
   background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+  
+  
 }
 
 .footer-info {
@@ -970,6 +1048,25 @@ section.product {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  
+}
+
+
+
+.footer-info::after {
+  content: "";
+  display: block;
+  
+  position: absolute;
+  top: 91px;
+  left: 930px;
+  
+  width: 231px;
+  height: 190px;
+  
+  background-image: url("../img/map-marker.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .contact {
