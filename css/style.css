@@ -73,6 +73,14 @@ input[type="radio"].visually-hidden {
   height: 65px;
   }
 
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
 .navigation-menu {
   width: 800px;
   display: flex;
@@ -82,7 +90,7 @@ input[type="radio"].visually-hidden {
   margin-right: 20px;
   padding-left: 0;
   padding-right: 0;
-
+  text-transform: uppercase;
 }
 
 .navigation-menu li {
@@ -93,17 +101,9 @@ input[type="radio"].visually-hidden {
 
 .basket {
   width: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-left: 0;
-  padding-right: 0;
-  
-
-  
+  text-align: end;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -118,7 +118,7 @@ input[type="radio"].visually-hidden {
   
   position: absolute;
   top: 7px;
-  left: 55px;
+  left: 115px;
   
   width: 17px;
   height: 18px;
@@ -126,8 +126,15 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  
-  
+}
+
+.basket:hover,
+.basket:focus {
+  color: #fb565a;
+}
+
+.basket:active {
+  color: #a6a6a6;
 }
 
 .navigation-menu,
@@ -144,6 +151,10 @@ input[type="radio"].visually-hidden {
 .navigation-menu a:hover,
 .navigation-menu a:focus {
   color: #fb565a;
+}
+
+.navigation-menu a:active {
+  color: #a6a6a6;
 }
 
 .slider-navigation {
@@ -232,8 +243,8 @@ input[type="radio"].visually-hidden {
   content: "";
   
   position: absolute;
-  top: 8px;
-  left: 8x;
+  top: 10px;
+  left: 150px;
   z-index: 1;
   
   width: 18px;
@@ -319,7 +330,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item b {
-  
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
 }
@@ -338,10 +349,7 @@ input[type="radio"].visually-hidden {
 
 
 
-.basket:hover,
-.basket:focus {
-  color: #fb565a;
-}
+
 
 .button-red {
   display: block;
@@ -951,6 +959,9 @@ section.product {
 }
 
 
+.catalog-items:hover::before {
+  opacity: 1;
+}
 
 .catalog-items a {
   display: flex;
@@ -1010,15 +1021,15 @@ section.product {
   border-radius: 2px;
 }
 
-.pagination-list a:hover,
-.pagination-list a:focus {
+.pagination-list a[href]:hover,
+.pagination-list a[href]:focus {
   background-color: #dfdfdf;
 }
 
 .pagination-item-current a {
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
-  
+  padding: 7px 14px;
   
 }
 
