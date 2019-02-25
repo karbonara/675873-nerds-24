@@ -78,11 +78,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: center;
   
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 90px;
+  margin-right: 10px;
   padding-left: 0;
   padding-right: 0;
-
+  text-transform: uppercase;
 }
 
 .navigation-menu li {
@@ -101,9 +101,7 @@ input[type="radio"].visually-hidden {
   margin-right: 20px;
   padding-left: 0;
   padding-right: 0;
-  
-
-  
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -168,7 +166,7 @@ input[type="radio"].visually-hidden {
 
 .slider-items {
   
-  padding: 65px 0 100px 0;
+  padding: 78px 0 83px 0;
 }
 
 .slider-items {
@@ -318,8 +316,10 @@ input[type="radio"].visually-hidden {
   margin-right: 60px;
 }
 
+
+
 .catalog-item b {
-  
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
 }
