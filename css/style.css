@@ -297,6 +297,7 @@ input[type="radio"].visually-hidden {
 
 
 
+/*
 .studio-order::after {
   content: "";
 
@@ -305,9 +306,10 @@ input[type="radio"].visually-hidden {
   left: 240px;
 
   width: 20px;
-  height: 3px;
+  height: 2px;
   background-color: red;
 }
+*/
 
 .catalog-list {
   display: flex;
