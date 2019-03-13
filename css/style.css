@@ -71,7 +71,7 @@ img {
    position: relative;
    padding-left: 50px;
    margin-bottom: -15px;
-   text-align: end;
+   text-align: right;
    text-transform: uppercase;
    color: #000000;
    font-weight: 700;
@@ -771,7 +771,19 @@ img {
    font-size: 16px;
    line-height: 24px;
 }
-legend .specials {}
+.icon-items {
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   width: 39px;
+   padding-top: 4px;
+}
+.down {
+   padding-left: 0px;
+}
+.up {
+   opacity: 0.5;
+}
 .breadcrumbs {
    display: flex;
    justify-content: space-between;
@@ -785,25 +797,6 @@ legend .specials {}
    text-transform: uppercase;
    font-weight: 400;
    width: 280px;
-}
-.breadcrumbs::before {
-   content: "";
-   position: absolute;
-   left: 585px;
-   top: 13px;
-   width: 11px;
-   height: 10px;
-   background-image: url(../img/icon-down-dir.svg);
-}
-.breadcrumbs::after {
-   content: "";
-   position: absolute;
-   left: 614px;
-   top: 13px;
-   width: 11px;
-   height: 10px;
-   background-image: url(../img/icon-up-dir.svg);
-   opacity: 0.5;
 }
 .breadcrumbs a {
    color: #b2b2b2;
@@ -1034,7 +1027,7 @@ section.product {
    padding: 13px 0;
    margin-left: auto;
    margin-right: auto;
-   6 color: #ffffff;
+   color: #ffffff;
    text-transform: uppercase;
    text-align: center;
    text-decoration: none;

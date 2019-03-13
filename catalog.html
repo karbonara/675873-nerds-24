@@ -3,9 +3,10 @@
 <head>
    <meta charset="utf-8">
    <title>HTML Academy: Нёрдс</title>
+   <meta content="telephone=no" name="format-detection">
    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
    <link href="css/normalize.css" rel="stylesheet">
-   <link href="css/style.css" rel="stylesheet">
+   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="inner-page">
    <header class="main-header">
@@ -85,6 +86,16 @@
                      <a href="#">По названию</a>
                   </li>
                </ul>
+               <div class="icon">
+                  <ul class="icon-items">
+                     <li class="down">
+                        <a href="#"><img alt="вверх" height="10" src="img/icon-down-dir.svg" width="11"></a>
+                     </li>
+                     <li class="up">
+                        <a href="#"><img alt="вниз" height="10" src="img/icon-up-dir.svg" width="11"></a>
+                     </li>
+                  </ul>
+               </div>
             </div>
             <ul class="product-list">
                <li class="catalog-items">
@@ -202,7 +213,9 @@
          <p class="you-text"><label for="your-text">Текст письма:</label> <input class="your" id="your-text" name="your-text" placeholder="В свободной форме" type="text"></p><button class="modal-close" type="button">Закрыть</button> <button class="button-modal" type="submit">Отправить</button>
       </form>
    </section>
-   <script src="js/javascript.js">
+   <script src="js/popup.js">
+   </script> 
+   <script src="js/popup.min.js">
    </script>
 </body>
 </html>
